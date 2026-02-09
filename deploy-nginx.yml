@@ -1,6 +1,6 @@
 ---
 - name: Deploy Secure Web Application
-  hosts: webservers
+  hosts: web
   become: yes
   gather_facts: yes  #This collects the Hostname and IP for my HTML
 
