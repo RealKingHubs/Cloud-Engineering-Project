@@ -1,0 +1,18 @@
+# The Gateway (Bastion)
+Host bastion
+  HostName 54.216.79.95
+  User ubuntu
+  IdentityFile ~/.ssh/Day1-Key.pem
+
+# The Private Servers (The Jump)
+Host web1
+  HostName 10.0.138.77
+  User ubuntu
+  IdentityFile ~/.ssh/Day1-Key.pem
+  ProxyJump bastion
+
+Host web2
+  HostName 10.0.155.216
+  User ubuntu
+  IdentityFile ~/.ssh/Day1-Key.pem
+  ProxyJump bastion
