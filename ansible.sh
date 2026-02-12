@@ -20,9 +20,17 @@ ssh web2    "echo 'Web2 reachable'"
 
 # 3. Playbook Execution
 # ------------------------------------------------------------------------------
-# Change directory to ensure Ansible finds local config files
-cd ~/aws-ansible-project
+# Verify connectivity to private web servers through Bastion 
+# if successful Execute the playbook using the defined inventory
+echo "Starting Ansible Connectivity Check..."
+ansible web -i inventory.ini -m ping
 
-# Execute the playbook using the defined inventory
-ansible-playbook -i inventory.ini deploy-nginx.yml
+if [ $? -eq 0 ]; then
+    echo "Connectivity Verified: Ready for Deployment."
+    ansible-playbook -i inventory.ini deploy-nginx.yml
+else
+    echo "Error: Connectivity Failed. Check SSH Config and Security Groups."
+    exit 1
+fi
+
 
