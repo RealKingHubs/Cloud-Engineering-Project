@@ -8,8 +8,8 @@ set -e
 # Configure global SSH settings and the specific project private key
 
 nano ~/.ssh/config           # Edit SSH host aliases (bastion, web1, web2)
-nano ~/.ssh/project.pem      # Paste the AWS private key content
-chmod 400 ~/.ssh/project.pem # Set restricted permissions required by SSH
+nano ~/.ssh/Day1-Key.pem      # Paste the AWS private key content
+sudo chmod 400 ~/.ssh/Day1-Key.pem # Set restricted permissions required by SSH
 
 # 2. Connection Validation
 # ------------------------------------------------------------------------------
