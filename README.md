@@ -51,3 +51,13 @@ ansible-playbook -i inventory.ini deploy-nginx.yml
 <h2>Detailed Article</h2>
 For a deep dive into the architecture diagrams, challenges faced, and a step-by-step walkthrough, check out my full write-up on:
  <a href = "https://medium.com/@RealKingHubs/how-i-deployed-a-secure-web-application-on-aws-a-practical-guide-for-junior-cloud-engineers-d84ac3553b8f">Medium</a> | <a href = "https://realkinghubs-blog.hashnode.dev/securing-web-apps-on-aws-essential-steps-for-junior-cloud-engineers">Hashnode</a>
+
+### Some Screenshorts I took:
+
+<img width="1104" height="808" alt="Screenshot 2026-03-10 142811" src="https://github.com/user-attachments/assets/d6c8e436-49f0-491f-954b-26ef34c6e5b2" />
+
+<img width="690" height="524" alt="Screenshot 2026-03-10 142228" src="https://github.com/user-attachments/assets/96e8d000-3686-4025-9738-719c7c7dee58" />
+<img width="694" height="567" alt="Screenshot 2026-03-10 142310" src="https://github.com/user-attachments/assets/1c0f96ad-a0f9-43e4-83fa-7cd4cc8b23fe" />
+<img width="702" height="541" alt="Screenshot 2026-03-10 142157" src="https://github.com/user-attachments/assets/e70b85bb-b812-42a5-b92a-98d9d0a0d971" />
+<img width="702" height="608" alt="Screenshot 2026-03-10 142243" src="https://github.com/user-attachments/assets/7d3a6e9d-95db-496d-9bb6-61b1efb51cf3" />
+
